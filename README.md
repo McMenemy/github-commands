@@ -10,6 +10,7 @@ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='mcmenemy'; GIT_AUTHOR_EMAIL=
 git push --set-upstream <origin> master
 
 * Remove a file from git repository but not local (like if you accidently pushed node modules)
+
 git rm -r --cached node_modules
 git commit -m 'remove the now ignored directory node_modules'  # make sure you added folder to .gitignore
 git push
